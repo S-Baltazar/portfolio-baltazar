@@ -1,0 +1,86 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Baltazar Salerno | Frontend Developer, Full Stack & Software Engineer",
+    template: "%s | Baltazar Salerno",
+  },
+  description:
+    "Portfolio profesional de Baltazar Salerno. Frontend Developer, Full Stack Developer y Software Engineer especializado en JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.",
+  keywords: [
+    "Baltazar Salerno",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "Software Engineer",
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "React",
+    "Next.js",
+    "Node.js",
+    "MongoDB",
+    "PostgreSQL",
+    "Inteligencia Artificial",
+    "IA",
+    "Portfolio",
+  ],
+  authors: [{ name: "Baltazar Salerno", url: siteUrl }],
+  creator: "Baltazar Salerno",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "/",
+    siteName: "Baltazar Salerno | Portfolio",
+    title: "Baltazar Salerno | Frontend Developer, Full Stack & Software Engineer",
+    description:
+      "Portfolio profesional de Baltazar Salerno. Desarrollo web con JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Baltazar Salerno | Frontend Developer, Full Stack & Software Engineer",
+    description:
+      "Portfolio profesional de Baltazar Salerno. JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e IA.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+};
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="es"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
+    >
+      <body className="min-h-full flex flex-col bg-background text-foreground font-sans">
+        {children}
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,64 @@
+# Baltazar Salerno
+
+> Portfolio profesional de Baltazar Salerno — Frontend Developer, Full Stack Developer y Software Engineer especializado en desarrollo web moderno, arquitecturas escalables e Inteligencia Artificial.
+
+## Perfil Profesional
+
+- **Nombre:** Baltazar Salerno
+- **Roles:** Frontend Developer, Full Stack Developer, Software Engineer
+- **Tecnologías principales:** JavaScript (JS), TypeScript, Python, React, Next.js, Node.js, MongoDB, PostgreSQL (Postgres), Inteligencia Artificial (IA)
+- **Email:** baltazar.salerno@ejemplo.com
+- **GitHub:** https://github.com/baltazarsalerno
+- **LinkedIn:** https://linkedin.com/in/baltazarsalerno
+
+## Resumen
+
+Baltazar Salerno diseña y construye aplicaciones web rápidas, accesibles y escalables de principio a fin. Combina experiencia en interfaces modernas con React y Next.js, desarrollo de APIs y servicios backend con Node.js y Python, gestión de bases de datos relacionales y no relacionales (PostgreSQL y MongoDB), e integración de capacidades de Inteligencia Artificial.
+
+## Habilidades Técnicas
+
+- **Frontend:** JavaScript, TypeScript, React, Next.js, Tailwind CSS, HTML5, CSS3
+- **Backend:** Node.js, Python, Express, APIs REST, JWT
+- **Bases de Datos:** PostgreSQL, MongoDB, Prisma, Redis
+- **Inteligencia Artificial & Herramientas:** Integración de modelos de IA, Git, GitHub, Docker, Vercel, CI/CD
+
+## Proyectos Destacados
+
+### 1. TaskFlow Pro (Full Stack · 2026)
+- **Descripción:** Plataforma colaborativa de gestión de proyectos con tableros Kanban en tiempo real, asignación de tareas y métricas de productividad.
+- **Puntos clave:** Sincronización instantánea entre miembros del equipo; filtros avanzados por prioridad, estado y responsable; panel de métricas semanales de rendimiento.
+- **Tecnologías:** Next.js, TypeScript, PostgreSQL, Tailwind CSS.
+
+### 2. FinanzApp Dashboard (Frontend · 2026)
+- **Descripción:** Panel de control financiero personal con visualización de gastos mensuales, presupuestos por categoría y proyección de ahorros.
+- **Puntos clave:** Gráficos interactivos y resumen mensual automático; modo oscuro y claro adaptativo; exportación de reportes en formato CSV.
+- **Tecnologías:** React, TypeScript, Tailwind CSS, Recharts.
+
+### 3. Nexus Store (Full Stack · 2025)
+- **Descripción:** Tienda online moderna con catálogo filtrable, carrito persistente, checkout simulado y panel de administración de inventario.
+- **Puntos clave:** Búsqueda instantánea y filtros por categoría y precio; gestión de stock y órdenes desde panel admin; optimización SEO y carga rápida de productos.
+- **Tecnologías:** Next.js, TypeScript, Prisma, Stripe API.
+
+### 4. Pulse API Monitor (Backend · 2025)
+- **Descripción:** Servicio de monitoreo de disponibilidad y latencia para microservicios, con alertas automáticas y registro histórico de incidentes.
+- **Puntos clave:** Health checks programables cada 30 segundos; webhooks de notificación ante caídas o alta latencia; API REST documentada con OpenAPI.
+- **Tecnologías:** Node.js, TypeScript, Redis, Docker.
+
+### 5. DevNotes Studio (Frontend · 2025)
+- **Descripción:** Editor de notas técnicas en Markdown con vista previa en vivo, resaltado de sintaxis y organización por carpetas y etiquetas.
+- **Puntos clave:** Soporte completo de GitHub Flavored Markdown; atajos de teclado para edición rápida; almacenamiento local automático sin pérdida de datos.
+- **Tecnologías:** Next.js, TypeScript, CSS Modules, LocalStorage.
+
+### 6. ReservasCloud (Backend · 2024)
+- **Descripción:** Motor de reservas y turnos online multi-sucursal con prevención de solapamientos, recordatorios y gestión de disponibilidad.
+- **Puntos clave:** Validación transaccional de horarios disponibles; soporte para múltiples zonas horarias; endpoints seguros con autenticación JWT.
+- **Tecnologías:** TypeScript, Express, PostgreSQL, JWT.
+
+## Enlaces del Sitio
+
+- [Inicio](/)
+- [Proyectos](/#proyectos)
+- [Sobre mí](/#sobre-mi)
+- [Habilidades](/#habilidades)
+- [Contacto](/#contacto)
+- [Sitemap](/sitemap.xml)
