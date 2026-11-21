@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { PROJECTS, type Project, type ProjectCategory } from "@/data/projects";
 
@@ -66,18 +67,31 @@ export function ProjectsSection() {
             >
               <div>
                 <div
-                  className={`relative h-36 w-full bg-gradient-to-br ${project.accentClass} border-b border-zinc-200/80 p-5 dark:border-zinc-800`}
+                  className={`relative h-44 w-full overflow-hidden bg-gradient-to-br ${project.accentClass} border-b border-zinc-200/80 dark:border-zinc-800`}
                 >
-                  <div className="flex items-center justify-between">
-                    <span className="inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-xs font-medium text-zinc-800 backdrop-blur-sm dark:bg-zinc-950/70 dark:text-zinc-200">
-                      {project.category}
-                    </span>
-                    <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">
-                      0{index + 1} · {project.year}
-                    </span>
-                  </div>
-                  <div className="mt-6 font-mono text-xs text-zinc-500 dark:text-zinc-400">
-                    /{project.id}
+                  <Image
+                    src={project.imageUrl}
+                    alt={project.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+                  <div className="relative z-10 flex h-full flex-col justify-between p-4">
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-zinc-900 backdrop-blur-sm dark:bg-zinc-950/80 dark:text-zinc-100">
+                        {project.category}
+                      </span>
+                      <span className="rounded-full bg-black/50 px-2.5 py-0.5 font-mono text-xs text-white backdrop-blur-sm">
+                        0{index + 1} · {project.year}
+                      </span>
+                    </div>
+                    {project.award && (
+                      <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-amber-400/95 px-3 py-1 text-xs font-semibold text-zinc-950 shadow-sm">
+                        <span aria-hidden="true">🏆</span>
+                        <span>{project.award}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
 

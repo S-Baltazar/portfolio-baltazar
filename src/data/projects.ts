@@ -10,9 +10,12 @@ export interface Project {
   title: string;
   category: ProjectCategory;
   year: string;
+  award?: string;
   description: string;
   highlights: string[];
   technologies: string[];
+  imageUrl: string;
+  imageAlt: string;
   accentClass: string;
   demoUrl?: string;
   repoUrl: string;
@@ -24,15 +27,18 @@ export const PROJECTS: Project[] = [
     title: "QWind: Quantum Optimization for Wind Farms",
     category: "Quantum Computing",
     year: "2026",
+    award: "3rd Place in Argentina — IonQ & Qollab Hackathon",
     description:
       "When a wind turbine spins, it slows down the air behind it and causes the next turbine to generate less electricity. QWind uses quantum computing to decide which turbines should stay on and which should turn off when a wind farm has to reduce output—avoiding wasted clean energy.",
     highlights: [
+      "3rd Place Winner in Argentina at the IonQ & Qollab Quantum Hackathon",
       "Executed on real quantum hardware (IonQ Forte 1, 36 qubits) reaching 93% of ideal success probability on valid samples",
       "Tested with real wind data from wind farms in Scotland, England, and Argentina (Chubut and Bahia Blanca)",
       "Engineered to output 100% valid turbine plans, outperforming standard penalty-based quantum formulations",
-      "Submitted to the Qollab & IonQ hackathon with support from Facultad de Ciencias Exactas (UNICEN)",
     ],
     technologies: ["Python", "Qiskit", "Quantum Computing", "NumPy", "SciPy"],
+    imageUrl: "/projects/qwind.png",
+    imageAlt: "QWind Quantum Optimization for Wind Farms banner",
     accentClass: "from-sky-500/20 via-indigo-500/10 to-transparent",
     demoUrl: "https://youtu.be/UGVkgYGXkF4",
     repoUrl: "https://github.com/agustindiazcano/qwind-qaoa-windfarm",
@@ -42,13 +48,14 @@ export const PROJECTS: Project[] = [
     title: "Tango Horizon: 3D & AI Mars Mission Simulator",
     category: "AI & 3D Simulation",
     year: "2026",
+    award: "Local Winner — NASA Space Apps Challenge",
     description:
       "On Mars, a radio signal takes 4 to 24 minutes to travel from Earth, so astronauts cannot wait for real-time help in an emergency. Built on real NASA maps of Gale Crater, Tango Horizon pairs a 3D simulator with a voice AI assistant and autonomous robots to protect crew health, anticipate dust storms, and coordinate rescues.",
     highlights: [
+      "Local Winner at NASA Space Apps Challenge 2026 (Buenos Aires, supported by NASA, CONAE, Universidad de Palermo, and IBM Argentina)",
       "Real-time 3D Martian terrain built over authentic NASA MRO HiRISE maps of Gale Crater",
       "Voice AI assistant supporting 5 languages over radio and smartphone QR remote control",
       "Autonomous rovers and coaxial drones for sample collection, biomedical monitoring, and emergency rescue",
-      "Built for NASA Space Apps Challenge 2026 with support from NASA, CONAE, Universidad de Palermo, and IBM Argentina",
     ],
     technologies: [
       "TypeScript",
@@ -58,6 +65,8 @@ export const PROJECTS: Project[] = [
       "Artificial Intelligence",
       "WebSocket",
     ],
+    imageUrl: "/projects/tango-horizon.png",
+    imageAlt: "Tango Horizon 3D & AI Mars Mission Simulator banner",
     accentClass: "from-orange-500/20 via-rose-500/10 to-transparent",
     demoUrl: "https://tangohorizon.vercel.app",
     repoUrl: "https://github.com/agustindiazcano/nasa-mars-tango-horizon",
@@ -83,6 +92,8 @@ export const PROJECTS: Project[] = [
       "Upstash Redis",
       "JWT",
     ],
+    imageUrl: "/projects/argentina-postcards.jpg",
+    imageAlt: "Argentina Postcards vintage Argentine stamp preview",
     accentClass: "from-amber-500/20 via-rose-500/10 to-transparent",
     demoUrl: "https://postales-vintage.vercel.app/",
     repoUrl: "https://github.com/S-Baltazar/argentina-postcards",

@@ -54,6 +54,10 @@ const jsonLd = {
         "PostgreSQL",
         "Artificial Intelligence",
       ],
+      award: [
+        "3rd Place in Argentina — IonQ & Qollab Quantum Hackathon",
+        "Local Winner — NASA Space Apps Challenge 2026",
+      ],
     },
     {
       "@type": "ItemList",
@@ -219,6 +223,17 @@ export default function Home() {
                   Artificial Intelligence (AI) integrations—prioritizing performance, accessibility,
                   and solid software engineering practices.
                 </p>
+
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/70 bg-amber-50 px-3.5 py-1.5 text-xs font-semibold text-amber-900 dark:border-amber-500/30 dark:bg-amber-950/40 dark:text-amber-200">
+                    <span aria-hidden="true">🏆</span>
+                    <span>3rd Place in Argentina — IonQ &amp; Qollab Hackathon</span>
+                  </div>
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/70 bg-amber-50 px-3.5 py-1.5 text-xs font-semibold text-amber-900 dark:border-amber-500/30 dark:bg-amber-950/40 dark:text-amber-200">
+                    <span aria-hidden="true">🏆</span>
+                    <span>Local Winner — NASA Space Apps Challenge</span>
+                  </div>
+                </div>
               </div>
 
               <div id="skills">
