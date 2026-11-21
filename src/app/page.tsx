@@ -88,11 +88,12 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Ambient background glow + subtle dot grid */}
-      <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="bg-grid-pattern absolute inset-0 opacity-60" />
-        <div className="absolute -top-40 left-1/4 h-96 w-96 rounded-full bg-sky-500/15 blur-[130px]" />
-        <div className="absolute top-1/3 right-1/5 h-96 w-96 rounded-full bg-indigo-500/15 blur-[140px]" />
+      {/* Ambient background glow + animated dot grid */}
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
+        <div className="bg-grid-pattern animate-grid-pan absolute inset-0 opacity-65" />
+        <div className="animate-orb-1 absolute -top-36 left-1/5 h-[28rem] w-[28rem] rounded-full bg-sky-500/20 blur-[130px]" />
+        <div className="animate-orb-2 absolute top-1/3 right-1/6 h-[30rem] w-[30rem] rounded-full bg-indigo-500/20 blur-[145px]" />
+        <div className="animate-orb-3 absolute bottom-[-6rem] left-1/3 h-[24rem] w-[24rem] rounded-full bg-emerald-500/15 blur-[130px]" />
       </div>
 
       {/* Navbar */}

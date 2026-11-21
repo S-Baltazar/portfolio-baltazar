@@ -94,6 +94,61 @@ body {
   animation: modal-pop 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+@keyframes grid-pan {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 28px 28px;
+  }
+}
+
+@keyframes orb-drift-1 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(60px, 40px, 0) scale(1.12);
+  }
+}
+
+@keyframes orb-drift-2 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-70px, -45px, 0) scale(1.15);
+  }
+}
+
+@keyframes orb-drift-3 {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(40px, -60px, 0) scale(1.08);
+  }
+}
+
+.animate-grid-pan {
+  animation: grid-pan 8s linear infinite;
+}
+
+.animate-orb-1 {
+  animation: orb-drift-1 16s ease-in-out infinite;
+}
+
+.animate-orb-2 {
+  animation: orb-drift-2 20s ease-in-out infinite;
+}
+
+.animate-orb-3 {
+  animation: orb-drift-3 18s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up,
   .animate-fade-up-delay-1,
@@ -101,7 +156,11 @@ body {
   .animate-fade-up-delay-3,
   .animate-float-slow,
   .animate-gradient,
-  .animate-modal-pop {
+  .animate-modal-pop,
+  .animate-grid-pan,
+  .animate-orb-1,
+  .animate-orb-2,
+  .animate-orb-3 {
     animation: none;
   }
 }
