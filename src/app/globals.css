@@ -22,3 +22,86 @@ body {
   background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
   background-size: 28px 28px;
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+.animate-modal-pop {
+  animation: modal-pop 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay-1,
+  .animate-fade-up-delay-2,
+  .animate-fade-up-delay-3,
+  .animate-float-slow,
+  .animate-gradient,
+  .animate-modal-pop {
+    animation: none;
+  }
+}

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 import { PROJECTS, type Project, type ProjectCategory } from "@/data/projects";
 
 const CATEGORIES: Array<"All" | ProjectCategory> = [
@@ -61,11 +62,10 @@ export function ProjectsSection() {
 
         <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project, index) => (
-            <article
-              key={project.id}
-              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-sky-400/40 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-15px_rgba(56,189,248,0.2)]"
-            >
-              <div>
+            <RevealOnScroll key={project.id} delayMs={index * 100} className="h-full">
+              <article className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-sky-400/50 hover:bg-white/[0.06] hover:shadow-[0_24px_60px_-15px_rgba(56,189,248,0.28)]">
+                <div className="pointer-events-none absolute -inset-px rounded-2xl bg-gradient-to-br from-sky-400/0 via-indigo-400/0 to-emerald-400/0 opacity-0 transition-opacity duration-500 group-hover:from-sky-400/15 group-hover:via-transparent group-hover:to-indigo-400/15 group-hover:opacity-100" />
+                <div className="relative z-10">
                 <div
                   className={`relative h-48 w-full overflow-hidden bg-gradient-to-br ${project.accentClass} border-b border-white/10`}
                 >
@@ -105,7 +105,7 @@ export function ProjectsSection() {
                 </div>
               </div>
 
-              <div className="px-6 pb-6">
+              <div className="relative z-10 px-6 pb-6">
                 <div className="flex flex-wrap gap-1.5">
                   {project.technologies.map((tech) => (
                     <span
@@ -147,7 +147,8 @@ export function ProjectsSection() {
                   </div>
                 </div>
               </div>
-            </article>
+              </article>
+            </RevealOnScroll>
           ))}
         </div>
       </div>
@@ -161,7 +162,7 @@ export function ProjectsSection() {
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="w-full max-w-lg rounded-2xl border border-white/15 bg-[#0b101d] p-6 shadow-2xl sm:p-8"
+            className="animate-modal-pop w-full max-w-lg rounded-2xl border border-white/15 bg-[#0b101d] p-6 shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4">

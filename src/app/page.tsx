@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { RevealOnScroll } from "@/components/RevealOnScroll";
 import aiUsage from "@/data/ai-usage.json";
 import { PROJECTS } from "@/data/projects";
 
@@ -156,54 +157,57 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-6">
             <div className="flex flex-col-reverse items-start gap-12 md:flex-row md:items-center md:justify-between">
               <div className="max-w-2xl">
-                <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-3.5 py-1 text-xs font-medium text-emerald-300">
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
+                <div className="animate-fade-up inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-3.5 py-1 text-xs font-medium text-emerald-300">
+                  <span className="relative flex h-2 w-2">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_#34d399]" />
+                  </span>
                   Available for new projects
                 </div>
 
-                <h1 className="mt-6 bg-gradient-to-r from-white via-zinc-100 to-sky-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl">
+                <h1 className="animate-fade-up-delay-1 animate-gradient mt-6 bg-gradient-to-r from-white via-sky-200 to-indigo-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-6xl">
                   Baltazar Salerno
                 </h1>
 
-                <p className="mt-3 text-xl font-medium text-sky-400 sm:text-2xl">
+                <p className="animate-fade-up-delay-1 mt-3 text-xl font-medium text-sky-400 sm:text-2xl">
                   Frontend Developer · Full Stack Developer · Software Engineer
                 </p>
 
-                <p className="mt-6 text-base leading-relaxed text-zinc-300 sm:text-lg">
+                <p className="animate-fade-up-delay-2 mt-6 text-base leading-relaxed text-zinc-300 sm:text-lg">
                   I design and build fast, accessible, and scalable web applications with
                   JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and Artificial
                   Intelligence. Focused on clean code and clear user experiences.
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-2.5">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200">
+                <div className="animate-fade-up-delay-2 mt-6 flex flex-wrap gap-2.5">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200 transition-transform duration-200 hover:-translate-y-0.5 hover:border-amber-300/50">
                     <span aria-hidden="true">🏆</span>
                     <span>1st Place (Impact) &amp; 3rd in Argentina — IonQ &amp; Qollab Hackathon</span>
                   </div>
-                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200 transition-transform duration-200 hover:-translate-y-0.5 hover:border-amber-300/50">
                     <span aria-hidden="true">🏆</span>
                     <span>Local Winner (Impact) — NASA Space Apps Challenge</span>
                   </div>
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-4">
+                <div className="animate-fade-up-delay-3 mt-8 flex flex-wrap gap-4">
                   <a
                     href="#projects"
-                    className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-zinc-950 shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all hover:bg-sky-200"
+                    className="rounded-xl bg-white px-6 py-3 text-sm font-semibold text-zinc-950 shadow-[0_0_30px_rgba(255,255,255,0.2)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-sky-200 hover:shadow-[0_0_40px_rgba(56,189,248,0.45)]"
                   >
                     View projects
                   </a>
                   <a
                     href="#contact"
-                    className="rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-medium text-zinc-100 backdrop-blur-md transition-colors hover:border-white/30 hover:bg-white/10"
+                    className="rounded-xl border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-medium text-zinc-100 backdrop-blur-md transition-all duration-200 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10"
                   >
                     Get in touch
                   </a>
                 </div>
               </div>
 
-              <div className="relative shrink-0">
-                <div className="absolute -inset-1 rounded-[28px] bg-gradient-to-tr from-sky-500/50 via-indigo-500/30 to-emerald-400/40 blur-lg opacity-75" />
+              <div className="animate-float-slow relative shrink-0">
+                <div className="absolute -inset-1.5 rounded-[30px] bg-gradient-to-tr from-sky-500/60 via-indigo-500/35 to-emerald-400/50 blur-xl opacity-75 transition-opacity duration-500 hover:opacity-100" />
                 <div className="relative h-44 w-44 overflow-hidden rounded-3xl border border-white/20 bg-zinc-900 shadow-2xl sm:h-56 sm:w-56">
                   <Image
                     src="/profile.png"
@@ -211,7 +215,7 @@ export default function Home() {
                     width={224}
                     height={224}
                     priority
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
@@ -227,7 +231,7 @@ export default function Home() {
           id="about"
           className="relative py-24 sm:py-28 border-t border-white/10"
         >
-          <div className="mx-auto max-w-6xl px-6">
+          <RevealOnScroll className="mx-auto max-w-6xl px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
                 <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-sky-400">
@@ -260,7 +264,7 @@ export default function Home() {
                   {SKILL_GROUPS.map((group) => (
                     <div
                       key={group.title}
-                      className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md transition-colors hover:border-white/20"
+                      className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/35 hover:bg-white/[0.05]"
                     >
                       <div className="flex items-center gap-2">
                         <span className={`h-2 w-2 rounded-full ${group.dotClass}`} />
@@ -278,7 +282,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
+          </RevealOnScroll>
         </section>
 
         {/* Contact */}
@@ -286,7 +290,7 @@ export default function Home() {
           id="contact"
           className="relative py-24 sm:py-28 border-t border-white/10"
         >
-          <div className="mx-auto max-w-6xl px-6">
+          <RevealOnScroll className="mx-auto max-w-6xl px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
               <div>
                 <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-sky-400">
@@ -337,7 +341,7 @@ export default function Home() {
 
               <ContactForm />
             </div>
-          </div>
+          </RevealOnScroll>
         </section>
       </main>
 
