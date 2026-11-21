@@ -5,9 +5,7 @@ import { PROJECTS, type Project, type ProjectCategory } from "@/data/projects";
 
 const CATEGORIES: Array<"Todos" | ProjectCategory> = [
   "Todos",
-  "Full Stack",
-  "Frontend",
-  "Backend",
+  ...Array.from(new Set(PROJECTS.map((project) => project.category))),
 ];
 
 export function ProjectsSection() {
@@ -31,31 +29,33 @@ export function ProjectsSection() {
               Proyectos Destacados
             </h2>
             <p className="mt-3 max-w-2xl text-base text-zinc-600 dark:text-zinc-400">
-              Una selección de seis proyectos de ejemplo que muestran arquitectura, diseño de interfaces y desarrollo de APIs.
+              Proyectos reales en los que participé, explicados de forma clara desde el problema que resuelven hasta la tecnología detrás.
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtrar proyectos por categoría">
-            {CATEGORIES.map((category) => {
-              const isActive = activeCategory === category;
-              return (
-                <button
-                  key={category}
-                  type="button"
-                  role="tab"
-                  aria-selected={isActive}
-                  onClick={() => setActiveCategory(category)}
-                  className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
-                    isActive
-                      ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                      : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
-                  }`}
-                >
-                  {category}
-                </button>
-              );
-            })}
-          </div>
+          {CATEGORIES.length > 2 && (
+            <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtrar proyectos por categoría">
+              {CATEGORIES.map((category) => {
+                const isActive = activeCategory === category;
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    role="tab"
+                    aria-selected={isActive}
+                    onClick={() => setActiveCategory(category)}
+                    className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
+                      isActive
+                        ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
+                        : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                    }`}
+                  >
+                    {category}
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -114,12 +114,16 @@ export function ProjectsSection() {
                   <div className="flex items-center gap-3 text-xs font-medium text-zinc-500 dark:text-zinc-400">
                     <a
                       href={project.repoUrl}
+                      target="_blank"
+                      rel="noreferrer"
                       className="hover:text-zinc-900 dark:hover:text-zinc-100"
                     >
                       Código
                     </a>
                     <a
                       href={project.demoUrl}
+                      target="_blank"
+                      rel="noreferrer"
                       className="hover:text-zinc-900 dark:hover:text-zinc-100"
                     >
                       Demo

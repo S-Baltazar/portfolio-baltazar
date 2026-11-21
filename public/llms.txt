@@ -24,35 +24,19 @@ Baltazar Salerno diseña y construye aplicaciones web rápidas, accesibles y esc
 
 ## Proyectos Destacados
 
-### 1. TaskFlow Pro (Full Stack · 2026)
-- **Descripción:** Plataforma colaborativa de gestión de proyectos con tableros Kanban en tiempo real, asignación de tareas y métricas de productividad.
-- **Puntos clave:** Sincronización instantánea entre miembros del equipo; filtros avanzados por prioridad, estado y responsable; panel de métricas semanales de rendimiento.
-- **Tecnologías:** Next.js, TypeScript, PostgreSQL, Tailwind CSS.
+### 1. QWind: Optimización Cuántica de Parques Eólicos (Computación Cuántica · 2026)
+- **Descripción:** Cuando un molino de viento gira, frena el aire que pasa detrás y hace que el molino siguiente genere menos electricidad. QWind usa computación cuántica para decidir qué molinos conviene dejar encendidos y cuáles apagar cuando un parque eólico debe reducir su producción, evitando desperdiciar energía limpia.
+- **Puntos clave:** Ejecutado en una computadora cuántica real (IonQ Forte 1 de 36 qubits) con 93% de precisión en las soluciones válidas; probado con datos reales de viento de parques eólicos en Escocia, Inglaterra y Argentina (Chubut y Bahía Blanca); diseñado para entregar siempre combinaciones válidas (100%); presentado en el hackathon de Qollab & IonQ con apoyo de la Facultad de Ciencias Exactas (UNICEN).
+- **Tecnologías:** Python, Qiskit, Computación Cuántica, NumPy, SciPy.
+- **Repositorio:** https://github.com/agustindiazcano/qwind-qaoa-windfarm
+- **Demo en video:** https://youtu.be/UGVkgYGXkF4
 
-### 2. FinanzApp Dashboard (Frontend · 2026)
-- **Descripción:** Panel de control financiero personal con visualización de gastos mensuales, presupuestos por categoría y proyección de ahorros.
-- **Puntos clave:** Gráficos interactivos y resumen mensual automático; modo oscuro y claro adaptativo; exportación de reportes en formato CSV.
-- **Tecnologías:** React, TypeScript, Tailwind CSS, Recharts.
-
-### 3. Nexus Store (Full Stack · 2025)
-- **Descripción:** Tienda online moderna con catálogo filtrable, carrito persistente, checkout simulado y panel de administración de inventario.
-- **Puntos clave:** Búsqueda instantánea y filtros por categoría y precio; gestión de stock y órdenes desde panel admin; optimización SEO y carga rápida de productos.
-- **Tecnologías:** Next.js, TypeScript, Prisma, Stripe API.
-
-### 4. Pulse API Monitor (Backend · 2025)
-- **Descripción:** Servicio de monitoreo de disponibilidad y latencia para microservicios, con alertas automáticas y registro histórico de incidentes.
-- **Puntos clave:** Health checks programables cada 30 segundos; webhooks de notificación ante caídas o alta latencia; API REST documentada con OpenAPI.
-- **Tecnologías:** Node.js, TypeScript, Redis, Docker.
-
-### 5. DevNotes Studio (Frontend · 2025)
-- **Descripción:** Editor de notas técnicas en Markdown con vista previa en vivo, resaltado de sintaxis y organización por carpetas y etiquetas.
-- **Puntos clave:** Soporte completo de GitHub Flavored Markdown; atajos de teclado para edición rápida; almacenamiento local automático sin pérdida de datos.
-- **Tecnologías:** Next.js, TypeScript, CSS Modules, LocalStorage.
-
-### 6. ReservasCloud (Backend · 2024)
-- **Descripción:** Motor de reservas y turnos online multi-sucursal con prevención de solapamientos, recordatorios y gestión de disponibilidad.
-- **Puntos clave:** Validación transaccional de horarios disponibles; soporte para múltiples zonas horarias; endpoints seguros con autenticación JWT.
-- **Tecnologías:** TypeScript, Express, PostgreSQL, JWT.
+### 2. Tango Horizon: Simulador 3D e IA para Misiones en Marte (IA & Simulación 3D · 2026)
+- **Descripción:** En Marte, una señal de radio tarda entre 4 y 24 minutos en llegar desde la Tierra, por lo que los astronautas no pueden esperar ayuda inmediata. Tango Horizon es un simulador 3D construido sobre mapas reales de la NASA donde un sistema de Inteligencia Artificial y una flota de robots asisten a la tripulación por voz para cuidar su salud, anticipar tormentas y coordinar rescates.
+- **Puntos clave:** Escenario 3D en tiempo real sobre mapas reales de la NASA del cráter Gale; asistente de Inteligencia Artificial por radio en 5 idiomas y control remoto desde celular vía QR; robots y drones autónomos para muestras, monitoreo biomédico y rescates; desarrollado para el NASA Space Apps Challenge 2026 con apoyo de NASA, CONAE, Universidad de Palermo e IBM Argentina.
+- **Tecnologías:** TypeScript, Three.js, Node.js, Python, Inteligencia Artificial, WebSocket.
+- **Repositorio:** https://github.com/agustindiazcano/nasa-mars-tango-horizon
+- **Demo en vivo:** https://tangohorizon.vercel.app
 
 ## Enlaces del Sitio
 
