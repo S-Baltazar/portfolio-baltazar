@@ -1,6 +1,17 @@
 import { ContactForm } from "@/components/ContactForm";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import aiUsage from "@/data/ai-usage.json";
 import { PROJECTS } from "@/data/projects";
+
+function formatCompactTokens(tokens: number): string {
+  if (tokens >= 1_000_000) {
+    return `${(tokens / 1_000_000).toFixed(1)}M`;
+  }
+  if (tokens >= 1_000) {
+    return `${(tokens / 1_000).toFixed(1)}K`;
+  }
+  return tokens.toString();
+}
 
 const SKILL_GROUPS = [
   {
@@ -77,32 +88,49 @@ export default function Home() {
             Baltazar Salerno
           </a>
 
-          <nav className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            <a
-              href="#proyectos"
-              className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
+          <div className="flex items-center gap-4">
+            <nav className="flex items-center gap-5 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+              <a
+                href="#proyectos"
+                className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
+              >
+                Proyectos
+              </a>
+              <a
+                href="#sobre-mi"
+                className="hidden sm:inline transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
+              >
+                Sobre mí
+              </a>
+              <a
+                href="#habilidades"
+                className="hidden md:inline transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
+              >
+                Habilidades
+              </a>
+              <a
+                href="#contacto"
+                className="hidden sm:inline rounded-full bg-zinc-900 px-4 py-1.5 text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+              >
+                Contacto
+              </a>
+            </nav>
+
+            <div
+              className="flex items-center gap-2 rounded-full border border-zinc-200 bg-white/90 px-3 py-1 text-xs shadow-xs dark:border-zinc-800 dark:bg-zinc-900/90"
+              title={`${aiUsage.totalTokens.toLocaleString("es-AR")} tokens en ${aiUsage.sessions} sesiones (últimos ${aiUsage.windowDays} días · actualizado ${aiUsage.updatedAt})`}
             >
-              Proyectos
-            </a>
-            <a
-              href="#sobre-mi"
-              className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
-            >
-              Sobre mí
-            </a>
-            <a
-              href="#habilidades"
-              className="hidden sm:inline transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
-            >
-              Habilidades
-            </a>
-            <a
-              href="#contacto"
-              className="rounded-full bg-zinc-900 px-4 py-1.5 text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
-            >
-              Contacto
-            </a>
-          </nav>
+              <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
+              <div className="flex flex-col leading-tight">
+                <span className="font-semibold text-zinc-900 dark:text-zinc-100">
+                  IA Usage: {formatCompactTokens(aiUsage.totalTokens)} tokens · {aiUsage.sessions} sesiones
+                </span>
+                <span className="text-[10px] text-zinc-500 dark:text-zinc-400">
+                  Últimos {aiUsage.windowDays} días
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
 
