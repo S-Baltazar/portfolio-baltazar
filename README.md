@@ -1,29 +1,29 @@
 # Baltazar Salerno — Portfolio
 
-Portfolio personal de **Baltazar Salerno** (Frontend Developer · Full Stack Developer · Software Engineer), construido con **Next.js**, **TypeScript** y **Tailwind CSS**.
+Personal portfolio of **Baltazar Salerno** (Frontend Developer · Full Stack Developer · Software Engineer), built with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-🌐 **Aplicación en vivo (Vercel):** [https://baltazarsalerno.vercel.app](https://baltazarsalerno.vercel.app)
-
----
-
-## Características
-
-- **Proyectos reales:** QWind (Computación Cuántica), Tango Horizon (Simulador 3D e IA para Marte) y Argentina Postcards (Full Stack).
-- **SEO & LLM Ready:** Metadatos OpenGraph/Twitter, JSON-LD (`schema.org`), `/robots.txt`, `/sitemap.xml` y `/llms.txt`.
-- **Indicador de Uso de IA (últimos 30 días):** Métricas reales de tokens y sesiones de Antigravity actualizadas automáticamente mediante `scripts/update-ai-usage.mjs` y `scripts/sync-ai-usage.ps1`.
+🌐 **Live Application (Vercel):** [https://baltazarsalerno.vercel.app](https://baltazarsalerno.vercel.app)
 
 ---
 
-## Desarrollo local
+## Features
+
+- **Real-World Projects:** QWind (Quantum Computing), Tango Horizon (3D & AI Mars Mission Simulator), and Argentina Postcards (Full Stack).
+- **SEO & LLM Ready:** OpenGraph/Twitter metadata, JSON-LD (`schema.org`), `/robots.txt`, `/sitemap.xml`, and `/llms.txt`.
+- **AI Usage Indicator (Last 30 Days):** Real Antigravity token and session metrics automatically updated via `scripts/update-ai-usage.mjs` and `scripts/sync-ai-usage.ps1`.
+
+---
+
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Abrir [http://localhost:3000](http://localhost:3000) en el navegador.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Sincronizar métricas de uso de IA
+### Sync AI Usage Metrics
 
 ```bash
 npm run sync:ai

@@ -20,12 +20,12 @@ const SKILL_GROUPS = [
     items: ["JavaScript (JS)", "TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
-    title: "Backend & Datos",
-    items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "APIs REST"],
+    title: "Backend & Data",
+    items: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
   },
   {
-    title: "IA & Herramientas",
-    items: ["Inteligencia Artificial (IA)", "Docker", "Git & GitHub", "Vercel", "CI/CD"],
+    title: "AI & Tooling",
+    items: ["Artificial Intelligence (AI)", "Docker", "Git & GitHub", "Vercel", "CI/CD"],
   },
 ];
 
@@ -37,10 +37,10 @@ const jsonLd = {
       name: "Baltazar Salerno",
       jobTitle: ["Frontend Developer", "Full Stack Developer", "Software Engineer"],
       description:
-        "Frontend Developer, Full Stack Developer y Software Engineer especializado en JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.",
+        "Frontend Developer, Full Stack Developer, and Software Engineer specialized in JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and Artificial Intelligence.",
       email: "mailto:baltazar.salerno@ejemplo.com",
       sameAs: [
-        "https://github.com/baltazarsalerno",
+        "https://github.com/S-Baltazar",
         "https://linkedin.com/in/baltazarsalerno",
       ],
       knowsAbout: [
@@ -52,12 +52,12 @@ const jsonLd = {
         "Node.js",
         "MongoDB",
         "PostgreSQL",
-        "Inteligencia Artificial",
+        "Artificial Intelligence",
       ],
     },
     {
       "@type": "ItemList",
-      name: "Proyectos de Baltazar Salerno",
+      name: "Projects by Baltazar Salerno",
       itemListElement: PROJECTS.map((project, index) => ({
         "@type": "ListItem",
         position: index + 1,
@@ -92,42 +92,42 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <nav className="flex items-center gap-5 text-sm font-medium text-zinc-600 dark:text-zinc-400">
               <a
-                href="#proyectos"
+                href="#projects"
                 className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
               >
-                Proyectos
+                Projects
               </a>
               <a
-                href="#sobre-mi"
+                href="#about"
                 className="hidden sm:inline transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
               >
-                Sobre mí
+                About
               </a>
               <a
-                href="#habilidades"
+                href="#skills"
                 className="hidden md:inline transition-colors hover:text-zinc-900 dark:hover:text-zinc-50"
               >
-                Habilidades
+                Skills
               </a>
               <a
-                href="#contacto"
+                href="#contact"
                 className="hidden sm:inline rounded-full bg-zinc-900 px-4 py-1.5 text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
               >
-                Contacto
+                Contact
               </a>
             </nav>
 
             <div
               className="flex items-center gap-2 rounded-full border border-zinc-200 bg-white/90 px-3 py-1 text-xs shadow-xs dark:border-zinc-800 dark:bg-zinc-900/90"
-              title={`${aiUsage.totalTokens.toLocaleString("es-AR")} tokens en ${aiUsage.sessions} sesiones (últimos ${aiUsage.windowDays} días · actualizado ${aiUsage.updatedAt})`}
+              title={`${aiUsage.totalTokens.toLocaleString("en-US")} tokens across ${aiUsage.sessions} sessions (last ${aiUsage.windowDays} days · updated ${aiUsage.updatedAt})`}
             >
               <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500" />
               <div className="flex flex-col leading-tight">
                 <span className="font-semibold text-zinc-900 dark:text-zinc-100">
-                  IA Usage: {formatCompactTokens(aiUsage.totalTokens)} tokens · {aiUsage.sessions} sesiones
+                  AI Usage: {formatCompactTokens(aiUsage.totalTokens)} tokens · {aiUsage.sessions} sessions
                 </span>
                 <span className="text-[10px] text-zinc-500 dark:text-zinc-400">
-                  Últimos {aiUsage.windowDays} días
+                  Last {aiUsage.windowDays} days
                 </span>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function Home() {
               <div className="max-w-2xl">
                 <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3.5 py-1 text-xs font-medium text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
                   <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                  Disponible para nuevos proyectos
+                  Available for new projects
                 </div>
 
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-6xl">
@@ -155,23 +155,23 @@ export default function Home() {
                 </p>
 
                 <p className="mt-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg">
-                  Diseño y construyo aplicaciones web rápidas, accesibles y escalables con
-                  JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.
-                  Enfocado en código limpio y experiencias de usuario claras.
+                  I design and build fast, accessible, and scalable web applications with
+                  JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and Artificial
+                  Intelligence. Focused on clean code and clear user experiences.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
-                    href="#proyectos"
+                    href="#projects"
                     className="rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
                   >
-                    Ver proyectos
+                    View projects
                   </a>
                   <a
-                    href="#contacto"
+                    href="#contact"
                     className="rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
                   >
-                    Contactarme
+                    Get in touch
                   </a>
                 </div>
               </div>
@@ -180,7 +180,7 @@ export default function Home() {
                 <div className="h-40 w-40 overflow-hidden rounded-3xl border-2 border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900 sm:h-52 sm:w-52">
                   <Image
                     src="/profile.png"
-                    alt="Foto de perfil de Baltazar Salerno"
+                    alt="Profile photo of Baltazar Salerno"
                     width={208}
                     height={208}
                     priority
@@ -192,42 +192,41 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6 Mock Projects */}
+        {/* Projects */}
         <ProjectsSection />
 
-        {/* Sobre mí & Habilidades */}
+        {/* About & Skills */}
         <section
-          id="sobre-mi"
+          id="about"
           className="py-20 sm:py-24 border-t border-zinc-200 dark:border-zinc-800"
         >
           <div className="mx-auto max-w-6xl px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-blue-600 dark:text-blue-400">
-                  Sobre mí
+                  About Me
                 </p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-                  Construyendo productos digitales de principio a fin
+                  Building digital products end to end
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  Soy Baltazar Salerno, Frontend Developer, Full Stack Developer y Software Engineer
-                  apasionado por crear soluciones web sólidas y fáciles de mantener. Disfruto tanto
-                  del diseño de interfaces claras como de la arquitectura de APIs y bases de datos
-                  eficientes.
+                  I am Baltazar Salerno, a Frontend Developer, Full Stack Developer, and Software
+                  Engineer passionate about building reliable, maintainable web solutions. I enjoy
+                  both crafting clear user interfaces and architecting efficient APIs and databases.
                 </p>
                 <p className="mt-4 text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  Trabajo con JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e integración
-                  de Inteligencia Artificial (IA), priorizando el rendimiento, la accesibilidad y
-                  las buenas prácticas de ingeniería de software.
+                  I work with JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and
+                  Artificial Intelligence (AI) integrations—prioritizing performance, accessibility,
+                  and solid software engineering practices.
                 </p>
               </div>
 
-              <div id="habilidades">
+              <div id="skills">
                 <p className="text-sm font-medium uppercase tracking-widest text-blue-600 dark:text-blue-400">
-                  Stack Tecnológico
+                  Tech Stack
                 </p>
                 <h3 className="mt-2 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-                  Habilidades principales
+                  Core Skills
                 </h3>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-3">
@@ -252,23 +251,23 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Contacto */}
+        {/* Contact */}
         <section
-          id="contacto"
+          id="contact"
           className="py-20 sm:py-24 border-t border-zinc-200 dark:border-zinc-800"
         >
           <div className="mx-auto max-w-6xl px-6">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-blue-600 dark:text-blue-400">
-                  Contacto
+                  Contact
                 </p>
                 <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-                  ¿Tenés un proyecto en mente?
+                  Have a project in mind?
                 </h2>
                 <p className="mt-4 max-w-md text-base leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  Podés escribirme mediante el formulario o contactarme directamente por mis canales
-                  habituales.
+                  Feel free to reach out using the form or connect with me directly through my
+                  channels.
                 </p>
 
                 <div className="mt-8 space-y-3 text-sm text-zinc-700 dark:text-zinc-300">
@@ -284,12 +283,12 @@ export default function Home() {
                   <div>
                     <span className="font-semibold">GitHub:</span>{" "}
                     <a
-                      href="https://github.com"
+                      href="https://github.com/S-Baltazar"
                       target="_blank"
                       rel="noreferrer"
                       className="text-blue-600 hover:underline dark:text-blue-400"
                     >
-                      github.com/baltazarsalerno
+                      github.com/S-Baltazar
                     </a>
                   </div>
                   <div>
@@ -314,8 +313,8 @@ export default function Home() {
 
       <footer className="border-t border-zinc-200 py-8 dark:border-zinc-800">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-zinc-500 dark:text-zinc-400 sm:flex-row">
-          <p>© 2026 Baltazar Salerno. Todos los derechos reservados.</p>
-          <p>Hecho con Next.js &amp; TypeScript</p>
+          <p>© 2026 Baltazar Salerno. All rights reserved.</p>
+          <p>Built with Next.js &amp; TypeScript</p>
         </div>
       </footer>
     </div>

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: "%s | Baltazar Salerno",
   },
   description:
-    "Portfolio profesional de Baltazar Salerno. Frontend Developer, Full Stack Developer y Software Engineer especializado en JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.",
+    "Professional portfolio of Baltazar Salerno. Frontend Developer, Full Stack Developer, and Software Engineer specialized in JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and Artificial Intelligence.",
   keywords: [
     "Baltazar Salerno",
     "Frontend Developer",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     "Node.js",
     "MongoDB",
     "PostgreSQL",
-    "Inteligencia Artificial",
-    "IA",
+    "Artificial Intelligence",
+    "AI",
     "Portfolio",
   ],
   authors: [{ name: "Baltazar Salerno", url: siteUrl }],
@@ -46,18 +46,18 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_AR",
+    locale: "en_US",
     url: "/",
     siteName: "Baltazar Salerno | Portfolio",
     title: "Baltazar Salerno | Frontend Developer, Full Stack & Software Engineer",
     description:
-      "Portfolio profesional de Baltazar Salerno. Desarrollo web con JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.",
+      "Professional portfolio of Baltazar Salerno. Web development with JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and Artificial Intelligence.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Baltazar Salerno | Frontend Developer, Full Stack & Software Engineer",
     description:
-      "Portfolio profesional de Baltazar Salerno. JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e IA.",
+      "Professional portfolio of Baltazar Salerno. JavaScript, Python, React, Node.js, MongoDB, PostgreSQL, and AI.",
   },
   robots: {
     index: true,
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="es"
+      lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground font-sans">

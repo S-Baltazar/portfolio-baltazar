@@ -3,22 +3,22 @@
 import { useState } from "react";
 import { PROJECTS, type Project, type ProjectCategory } from "@/data/projects";
 
-const CATEGORIES: Array<"Todos" | ProjectCategory> = [
-  "Todos",
+const CATEGORIES: Array<"All" | ProjectCategory> = [
+  "All",
   ...Array.from(new Set(PROJECTS.map((project) => project.category))),
 ];
 
 export function ProjectsSection() {
-  const [activeCategory, setActiveCategory] = useState<"Todos" | ProjectCategory>("Todos");
+  const [activeCategory, setActiveCategory] = useState<"All" | ProjectCategory>("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filteredProjects =
-    activeCategory === "Todos"
+    activeCategory === "All"
       ? PROJECTS
       : PROJECTS.filter((project) => project.category === activeCategory);
 
   return (
-    <section id="proyectos" className="py-20 sm:py-24 border-t border-zinc-200 dark:border-zinc-800">
+    <section id="projects" className="py-20 sm:py-24 border-t border-zinc-200 dark:border-zinc-800">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -26,15 +26,15 @@ export function ProjectsSection() {
               Portfolio
             </p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
-              Proyectos Destacados
+              Featured Projects
             </h2>
             <p className="mt-3 max-w-2xl text-base text-zinc-600 dark:text-zinc-400">
-              Proyectos reales en los que participé, explicados de forma clara desde el problema que resuelven hasta la tecnología detrás.
+              Real-world projects I have worked on, explained clearly from the problem they solve to the technology behind them.
             </p>
           </div>
 
           {CATEGORIES.length > 2 && (
-            <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filtrar proyectos por categoría">
+            <div className="flex flex-wrap gap-2" role="tablist" aria-label="Filter projects by category">
               {CATEGORIES.map((category) => {
                 const isActive = activeCategory === category;
                 return (
@@ -109,7 +109,7 @@ export function ProjectsSection() {
                     onClick={() => setSelectedProject(project)}
                     className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 cursor-pointer"
                   >
-                    Ver detalles →
+                    View details →
                   </button>
                   <div className="flex items-center gap-3 text-xs font-medium text-zinc-500 dark:text-zinc-400">
                     <a
@@ -118,7 +118,7 @@ export function ProjectsSection() {
                       rel="noreferrer"
                       className="hover:text-zinc-900 dark:hover:text-zinc-100"
                     >
-                      Código
+                      Code
                     </a>
                     <a
                       href={project.demoUrl}
@@ -163,7 +163,7 @@ export function ProjectsSection() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                aria-label="Cerrar modal"
+                aria-label="Close modal"
                 className="rounded-lg p-1.5 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 cursor-pointer"
               >
                 ✕
@@ -176,7 +176,7 @@ export function ProjectsSection() {
 
             <div className="mt-6">
               <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                Puntos clave
+                Key Highlights
               </h4>
               <ul className="mt-2.5 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
                 {selectedProject.highlights.map((item) => (
@@ -190,7 +190,7 @@ export function ProjectsSection() {
 
             <div className="mt-6">
               <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
-                Tecnologías
+                Technologies
               </h4>
               <div className="mt-2.5 flex flex-wrap gap-2">
                 {selectedProject.technologies.map((tech) => (
@@ -210,7 +210,7 @@ export function ProjectsSection() {
                 onClick={() => setSelectedProject(null)}
                 className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 cursor-pointer"
               >
-                Cerrar
+                Close
               </button>
             </div>
           </div>

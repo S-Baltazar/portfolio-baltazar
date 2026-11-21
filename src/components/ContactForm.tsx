@@ -28,17 +28,17 @@ export function ContactForm() {
             ✓
           </div>
           <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-50">
-            ¡Mensaje enviado!
+            Message sent!
           </h3>
           <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Gracias por contactarte. Este es un formulario de demostración; te responderé a la brevedad.
+            Thanks for reaching out. This is a demo form; I will get back to you shortly.
           </p>
           <button
             type="button"
             onClick={() => setSubmitted(false)}
             className="mt-6 rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 cursor-pointer"
           >
-            Enviar otro mensaje
+            Send another message
           </button>
         </div>
       ) : (
@@ -48,7 +48,7 @@ export function ContactForm() {
               htmlFor="contact-name"
               className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
-              Nombre
+              Name
             </label>
             <input
               id="contact-name"
@@ -56,7 +56,7 @@ export function ContactForm() {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Tu nombre"
+              placeholder="Your name"
               className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
             />
           </div>
@@ -74,7 +74,7 @@ export function ContactForm() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="tu@email.com"
+              placeholder="you@email.com"
               className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
             />
           </div>
@@ -84,7 +84,7 @@ export function ContactForm() {
               htmlFor="contact-message"
               className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
-              Mensaje
+              Message
             </label>
             <textarea
               id="contact-message"
@@ -92,7 +92,7 @@ export function ContactForm() {
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Contame sobre tu proyecto o consulta..."
+              placeholder="Tell me about your project or inquiry..."
               className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
             />
           </div>
@@ -101,7 +101,7 @@ export function ContactForm() {
             type="submit"
             className="w-full rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 cursor-pointer"
           >
-            Enviar mensaje
+            Send message
           </button>
         </div>
       )}

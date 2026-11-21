@@ -1,54 +1,54 @@
 # Baltazar Salerno
 
-> Portfolio profesional de Baltazar Salerno — Frontend Developer, Full Stack Developer y Software Engineer especializado en desarrollo web moderno, arquitecturas escalables e Inteligencia Artificial.
+> Professional portfolio of Baltazar Salerno — Frontend Developer, Full Stack Developer, and Software Engineer specialized in modern web development, scalable architectures, and Artificial Intelligence.
 
-## Perfil Profesional
+## Professional Profile
 
-- **Nombre:** Baltazar Salerno
+- **Name:** Baltazar Salerno
 - **Roles:** Frontend Developer, Full Stack Developer, Software Engineer
-- **Tecnologías principales:** JavaScript (JS), TypeScript, Python, React, Next.js, Node.js, MongoDB, PostgreSQL (Postgres), Inteligencia Artificial (IA)
+- **Core Technologies:** JavaScript (JS), TypeScript, Python, React, Next.js, Node.js, MongoDB, PostgreSQL, Artificial Intelligence (AI)
+- **Portfolio:** https://baltazarsalerno.vercel.app
 - **Email:** baltazar.salerno@ejemplo.com
-- **GitHub:** https://github.com/baltazarsalerno
+- **GitHub:** https://github.com/S-Baltazar
 - **LinkedIn:** https://linkedin.com/in/baltazarsalerno
 
-## Resumen
+## Summary
 
-Baltazar Salerno diseña y construye aplicaciones web rápidas, accesibles y escalables de principio a fin. Combina experiencia en interfaces modernas con React y Next.js, desarrollo de APIs y servicios backend con Node.js y Python, gestión de bases de datos relacionales y no relacionales (PostgreSQL y MongoDB), e integración de capacidades de Inteligencia Artificial.
+Baltazar Salerno designs and builds fast, accessible, and scalable web applications end to end. He combines modern frontend interfaces with React and Next.js, backend services and APIs in Node.js and Python, relational and NoSQL database engineering (PostgreSQL and MongoDB), and Artificial Intelligence integrations.
 
-## Habilidades Técnicas
+## Technical Skills
 
 - **Frontend:** JavaScript, TypeScript, React, Next.js, Tailwind CSS, HTML5, CSS3
-- **Backend:** Node.js, Python, Express, APIs REST, JWT
-- **Bases de Datos:** PostgreSQL, MongoDB, Prisma, Redis
-- **Inteligencia Artificial & Herramientas:** Integración de modelos de IA, Git, GitHub, Docker, Vercel, CI/CD
+- **Backend & Data:** Node.js, Python, PostgreSQL, MongoDB, Express, REST APIs, JWT
+- **AI & Tooling:** Artificial Intelligence (AI) Integrations, Docker, Git, GitHub, Vercel, CI/CD
 
-## Proyectos Destacados
+## Featured Projects
 
-### 1. QWind: Optimización Cuántica de Parques Eólicos (Computación Cuántica · 2026)
-- **Descripción:** Cuando un molino de viento gira, frena el aire que pasa detrás y hace que el molino siguiente genere menos electricidad. QWind usa computación cuántica para decidir qué molinos conviene dejar encendidos y cuáles apagar cuando un parque eólico debe reducir su producción, evitando desperdiciar energía limpia.
-- **Puntos clave:** Ejecutado en una computadora cuántica real (IonQ Forte 1 de 36 qubits) con 93% de precisión en las soluciones válidas; probado con datos reales de viento de parques eólicos en Escocia, Inglaterra y Argentina (Chubut y Bahía Blanca); diseñado para entregar siempre combinaciones válidas (100%); presentado en el hackathon de Qollab & IonQ con apoyo de la Facultad de Ciencias Exactas (UNICEN).
-- **Tecnologías:** Python, Qiskit, Computación Cuántica, NumPy, SciPy.
-- **Repositorio:** https://github.com/agustindiazcano/qwind-qaoa-windfarm
-- **Demo en video:** https://youtu.be/UGVkgYGXkF4
+### 1. QWind: Quantum Optimization for Wind Farms (Quantum Computing · 2026)
+- **Description:** When a wind turbine spins, it slows down the air behind it and causes the next turbine to generate less electricity. QWind uses quantum computing to decide which turbines should stay on and which should turn off when a wind farm has to reduce output—avoiding wasted clean energy.
+- **Key Highlights:** Executed on real quantum hardware (IonQ Forte 1, 36 qubits) reaching 93% of ideal success probability on valid samples; tested with real wind data from wind farms in Scotland, England, and Argentina (Chubut and Bahia Blanca); engineered to output 100% valid turbine plans; submitted to the Qollab & IonQ hackathon with support from Facultad de Ciencias Exactas (UNICEN).
+- **Technologies:** Python, Qiskit, Quantum Computing, NumPy, SciPy.
+- **Repository:** https://github.com/agustindiazcano/qwind-qaoa-windfarm
+- **Video Demo:** https://youtu.be/UGVkgYGXkF4
 
-### 2. Tango Horizon: Simulador 3D e IA para Misiones en Marte (IA & Simulación 3D · 2026)
-- **Descripción:** En Marte, una señal de radio tarda entre 4 y 24 minutos en llegar desde la Tierra, por lo que los astronautas no pueden esperar ayuda inmediata. Tango Horizon es un simulador 3D construido sobre mapas reales de la NASA donde un sistema de Inteligencia Artificial y una flota de robots asisten a la tripulación por voz para cuidar su salud, anticipar tormentas y coordinar rescates.
-- **Puntos clave:** Escenario 3D en tiempo real sobre mapas reales de la NASA del cráter Gale; asistente de Inteligencia Artificial por radio en 5 idiomas y control remoto desde celular vía QR; robots y drones autónomos para muestras, monitoreo biomédico y rescates; desarrollado para el NASA Space Apps Challenge 2026 con apoyo de NASA, CONAE, Universidad de Palermo e IBM Argentina.
-- **Tecnologías:** TypeScript, Three.js, Node.js, Python, Inteligencia Artificial, WebSocket.
-- **Repositorio:** https://github.com/agustindiazcano/nasa-mars-tango-horizon
-- **Demo en vivo:** https://tangohorizon.vercel.app
+### 2. Tango Horizon: 3D & AI Mars Mission Simulator (AI & 3D Simulation · 2026)
+- **Description:** On Mars, a radio signal takes 4 to 24 minutes to travel from Earth, so astronauts cannot wait for real-time help in an emergency. Built on real NASA maps of Gale Crater, Tango Horizon pairs a 3D simulator with a voice AI assistant and autonomous robots to protect crew health, anticipate dust storms, and coordinate rescues.
+- **Key Highlights:** Real-time 3D Martian terrain built over authentic NASA MRO HiRISE maps of Gale Crater; voice AI assistant supporting 5 languages over radio and smartphone QR remote control; autonomous rovers and coaxial drones for sample collection, biomedical monitoring, and emergency rescue; built for NASA Space Apps Challenge 2026 with support from NASA, CONAE, Universidad de Palermo, and IBM Argentina.
+- **Technologies:** TypeScript, Three.js, Node.js, Python, Artificial Intelligence, WebSocket.
+- **Repository:** https://github.com/agustindiazcano/nasa-mars-tango-horizon
+- **Live Demo:** https://tangohorizon.vercel.app
 
-### 3. Argentina Postcards: Cartas y Postales Vintage (Full Stack · 2026)
-- **Descripción:** Aplicación web para escribir, sellar y enviar cartas y postales de estilo antiguo entre amigos. Permite redactar mensajes sobre papel envejecido, elegir entre 100 estampillas argentinas reales organizadas por época y ver animaciones paso a paso al cerrar el sobre con lacre rojo y al abrirlo.
-- **Puntos clave:** Catálogo de 100 estampillas postales argentinas reales filtrables por época; animaciones interactivas de escritura, doblado del sobre, sellado con lacre rojo y apertura; sistema de amigos con códigos postales únicos (`POSTAL-XXXXXX`); backend en Node.js y Express con autenticación JWT y persistencia en Upstash Redis.
-- **Tecnologías:** React, Node.js, Express, Tailwind CSS, Upstash Redis, JWT.
-- **Repositorio:** https://github.com/S-Baltazar/argentina-postcards
+### 3. Argentina Postcards: Vintage Letters (Full Stack · 2026)
+- **Description:** A web application for writing, sealing, and sending vintage-style letters and postcards between friends. Users write messages on aged paper, choose from 100 real Argentine postage stamps organized by era, and watch step-by-step animations as the envelope is folded, sealed with red wax, and opened.
+- **Key Highlights:** Catalog of 100 real Argentine postage stamps filterable by era (from before 1959 to 2010 onwards); interactive writing, envelope folding, red wax-seal pressing, and unsealing animations; friend system powered by unique postal codes (`POSTAL-XXXXXX`); Node.js and Express backend with JWT authentication and Upstash Redis persistence.
+- **Technologies:** React, Node.js, Express, Tailwind CSS, Upstash Redis, JWT.
+- **Repository:** https://github.com/S-Baltazar/argentina-postcards
 
-## Enlaces del Sitio
+## Site Links
 
-- [Inicio](/)
-- [Proyectos](/#proyectos)
-- [Sobre mí](/#sobre-mi)
-- [Habilidades](/#habilidades)
-- [Contacto](/#contacto)
+- [Home](/)
+- [Projects](/#projects)
+- [About](/#about)
+- [Skills](/#skills)
+- [Contact](/#contact)
 - [Sitemap](/sitemap.xml)

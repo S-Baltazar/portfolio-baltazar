@@ -1,6 +1,6 @@
 export type ProjectCategory =
-  | "Computación Cuántica"
-  | "IA & Simulación 3D"
+  | "Quantum Computing"
+  | "AI & 3D Simulation"
   | "Full Stack"
   | "Frontend"
   | "Backend";
@@ -21,41 +21,41 @@ export interface Project {
 export const PROJECTS: Project[] = [
   {
     id: "qwind-qaoa-windfarm",
-    title: "QWind: Optimización Cuántica de Parques Eólicos",
-    category: "Computación Cuántica",
+    title: "QWind: Quantum Optimization for Wind Farms",
+    category: "Quantum Computing",
     year: "2026",
     description:
-      "Cuando un molino de viento gira, frena el aire que pasa detrás y hace que el molino siguiente genere menos electricidad. QWind usa computación cuántica para decidir qué molinos conviene dejar encendidos y cuáles apagar cuando un parque eólico debe reducir su producción, evitando desperdiciar energía limpia.",
+      "When a wind turbine spins, it slows down the air behind it and causes the next turbine to generate less electricity. QWind uses quantum computing to decide which turbines should stay on and which should turn off when a wind farm has to reduce output—avoiding wasted clean energy.",
     highlights: [
-      "Ejecutado en una computadora cuántica real (IonQ Forte 1 de 36 qubits) con 93% de precisión en las soluciones válidas",
-      "Probado con datos reales de viento de parques eólicos en Escocia, Inglaterra y Argentina (Chubut y Bahía Blanca)",
-      "Diseñado para entregar siempre combinaciones válidas (100%), superando a los métodos cuánticos tradicionales",
-      "Proyecto presentado en el hackathon de Qollab & IonQ con apoyo de la Facultad de Ciencias Exactas (UNICEN)",
+      "Executed on real quantum hardware (IonQ Forte 1, 36 qubits) reaching 93% of ideal success probability on valid samples",
+      "Tested with real wind data from wind farms in Scotland, England, and Argentina (Chubut and Bahia Blanca)",
+      "Engineered to output 100% valid turbine plans, outperforming standard penalty-based quantum formulations",
+      "Submitted to the Qollab & IonQ hackathon with support from Facultad de Ciencias Exactas (UNICEN)",
     ],
-    technologies: ["Python", "Qiskit", "Computación Cuántica", "NumPy", "SciPy"],
+    technologies: ["Python", "Qiskit", "Quantum Computing", "NumPy", "SciPy"],
     accentClass: "from-sky-500/20 via-indigo-500/10 to-transparent",
     demoUrl: "https://youtu.be/UGVkgYGXkF4",
     repoUrl: "https://github.com/agustindiazcano/qwind-qaoa-windfarm",
   },
   {
     id: "nasa-mars-tango-horizon",
-    title: "Tango Horizon: Simulador 3D e IA para Misiones en Marte",
-    category: "IA & Simulación 3D",
+    title: "Tango Horizon: 3D & AI Mars Mission Simulator",
+    category: "AI & 3D Simulation",
     year: "2026",
     description:
-      "En Marte, una señal de radio tarda entre 4 y 24 minutos en llegar desde la Tierra, por lo que los astronautas no pueden esperar ayuda inmediata. Tango Horizon es un simulador 3D construido sobre mapas reales de la NASA donde un sistema de Inteligencia Artificial y una flota de robots asisten a la tripulación por voz para cuidar su salud, anticipar tormentas y coordinar rescates.",
+      "On Mars, a radio signal takes 4 to 24 minutes to travel from Earth, so astronauts cannot wait for real-time help in an emergency. Built on real NASA maps of Gale Crater, Tango Horizon pairs a 3D simulator with a voice AI assistant and autonomous robots to protect crew health, anticipate dust storms, and coordinate rescues.",
     highlights: [
-      "Escenario 3D en tiempo real construido sobre mapas reales de la NASA del cráter Gale en Marte",
-      "Asistente de Inteligencia Artificial por radio en 5 idiomas y control remoto desde el celular mediante código QR",
-      "Robots y drones autónomos que recolectan muestras, vigilan signos vitales y ejecutan rescates de emergencia",
-      "Desarrollado para el NASA Space Apps Challenge 2026 con apoyo de NASA, CONAE, Universidad de Palermo e IBM Argentina",
+      "Real-time 3D Martian terrain built over authentic NASA MRO HiRISE maps of Gale Crater",
+      "Voice AI assistant supporting 5 languages over radio and smartphone QR remote control",
+      "Autonomous rovers and coaxial drones for sample collection, biomedical monitoring, and emergency rescue",
+      "Built for NASA Space Apps Challenge 2026 with support from NASA, CONAE, Universidad de Palermo, and IBM Argentina",
     ],
     technologies: [
       "TypeScript",
       "Three.js",
       "Node.js",
       "Python",
-      "Inteligencia Artificial",
+      "Artificial Intelligence",
       "WebSocket",
     ],
     accentClass: "from-orange-500/20 via-rose-500/10 to-transparent",
@@ -64,16 +64,16 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "argentina-postcards",
-    title: "Argentina Postcards: Cartas y Postales Vintage",
+    title: "Argentina Postcards: Vintage Letters",
     category: "Full Stack",
     year: "2026",
     description:
-      "Aplicación web para escribir, sellar y enviar cartas y postales de estilo antiguo entre amigos. Permite redactar mensajes sobre papel envejecido, elegir entre 100 estampillas argentinas reales organizadas por época y ver animaciones paso a paso al cerrar el sobre con lacre rojo y al abrirlo.",
+      "A web application for writing, sealing, and sending vintage-style letters and postcards between friends. Users write messages on aged paper, choose from 100 real Argentine postage stamps organized by era, and watch step-by-step animations as the envelope is folded, sealed with red wax, and opened.",
     highlights: [
-      "Catálogo de 100 estampillas postales argentinas reales filtrables por época (desde antes de 1959 hasta 2010 en adelante)",
-      "Animaciones interactivas de escritura, doblado del sobre, sellado con lacre rojo y apertura para quien recibe la carta",
-      "Sistema de amigos con códigos postales únicos (POSTAL-XXXXXX), bandeja de entrada y cartas enviadas",
-      "Backend en Node.js y Express con autenticación JWT y persistencia en Upstash Redis",
+      "Catalog of 100 real Argentine postage stamps filterable by era (from before 1959 to 2010 onwards)",
+      "Interactive writing, envelope folding, red wax-seal pressing, and unsealing animations",
+      "Friend system powered by unique postal codes (POSTAL-XXXXXX), inbox, and sent letters management",
+      "Node.js and Express backend with JWT authentication and Upstash Redis persistence",
     ],
     technologies: [
       "React",
