@@ -111,23 +111,25 @@ export function ProjectsSection() {
                   >
                     View details →
                   </button>
-                  <div className="flex items-center gap-3 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+                  <div className="flex items-center gap-2 text-xs font-medium">
                     <a
                       href={project.repoUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="hover:text-zinc-900 dark:hover:text-zinc-100"
+                      className="rounded-md border border-zinc-200 px-2.5 py-1 text-zinc-700 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
                     >
-                      Code
+                      GitHub ↗
                     </a>
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="hover:text-zinc-900 dark:hover:text-zinc-100"
-                    >
-                      Demo
-                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="rounded-md bg-zinc-900 px-2.5 py-1 text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                      >
+                        Demo ↗
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -204,7 +206,28 @@ export function ProjectsSection() {
               </div>
             </div>
 
-            <div className="mt-8 flex justify-end">
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-100 pt-5 dark:border-zinc-800">
+              <div className="flex flex-wrap items-center gap-2.5">
+                <a
+                  href={selectedProject.repoUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg border border-zinc-300 px-3.5 py-2 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+                >
+                  GitHub Repository ↗
+                </a>
+                {selectedProject.demoUrl && (
+                  <a
+                    href={selectedProject.demoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg bg-blue-600 px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                  >
+                    Live / Video Demo ↗
+                  </a>
+                )}
+              </div>
+
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
