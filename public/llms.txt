@@ -43,6 +43,7 @@ Baltazar Salerno designs and builds fast, accessible, and scalable web applicati
 - **Key Highlights:** Catalog of 100 real Argentine postage stamps filterable by era (from before 1959 to 2010 onwards); interactive writing, envelope folding, red wax-seal pressing, and unsealing animations; friend system powered by unique postal codes (`POSTAL-XXXXXX`); Node.js and Express backend with JWT authentication and Upstash Redis persistence.
 - **Technologies:** React, Node.js, Express, Tailwind CSS, Upstash Redis, JWT.
 - **Repository:** https://github.com/S-Baltazar/argentina-postcards
+- **Live Demo:** https://postales-vintage.vercel.app/
 
 ## Site Links
 

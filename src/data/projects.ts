@@ -84,6 +84,7 @@ export const PROJECTS: Project[] = [
       "JWT",
     ],
     accentClass: "from-amber-500/20 via-rose-500/10 to-transparent",
+    demoUrl: "https://postales-vintage.vercel.app/",
     repoUrl: "https://github.com/S-Baltazar/argentina-postcards",
   },
 ];
