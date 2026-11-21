@@ -58,8 +58,8 @@ const jsonLd = {
         "Artificial Intelligence",
       ],
       award: [
-        "3rd Place in Argentina — IonQ & Qollab Quantum Hackathon",
-        "Local Winner — NASA Space Apps Challenge 2026",
+        "1st Place (Impact Category) & 3rd Place in Argentina — IonQ & Qollab Quantum Hackathon",
+        "1st Place Local Winner (Impact Category) — NASA Space Apps Challenge 2026",
       ],
     },
     {
@@ -178,11 +178,11 @@ export default function Home() {
                 <div className="mt-6 flex flex-wrap gap-2.5">
                   <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200">
                     <span aria-hidden="true">🏆</span>
-                    <span>3rd Place in Argentina — IonQ &amp; Qollab Hackathon</span>
+                    <span>1st Place (Impact) &amp; 3rd in Argentina — IonQ &amp; Qollab Hackathon</span>
                   </div>
                   <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1.5 text-xs font-semibold text-amber-200">
                     <span aria-hidden="true">🏆</span>
-                    <span>Local Winner — NASA Space Apps Challenge</span>
+                    <span>Local Winner (Impact) — NASA Space Apps Challenge</span>
                   </div>
                 </div>
 

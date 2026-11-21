@@ -8,8 +8,8 @@ Personal portfolio of **Baltazar Salerno** (Frontend Developer · Full Stack Dev
 
 ## 🏆 Hackathon Awards & Recognition
 
-- **3rd Place in Argentina — IonQ & Qollab Quantum Hackathon** (*QWind: Quantum Optimization for Wind Farms*, executed on real IonQ Forte 1 quantum hardware)
-- **Local Winner — NASA Space Apps Challenge 2026** (*Tango Horizon: 3D & AI Mars Mission Simulator*, Buenos Aires local event)
+- **1st Place (Impact Category) & 3rd Place in Argentina — IonQ & Qollab Quantum Hackathon** (*QWind: Quantum Optimization for Wind Farms*, executed on real IonQ Forte 1 quantum hardware)
+- **1st Place Local Winner (Impact Category) — NASA Space Apps Challenge 2026** (*Tango Horizon: 3D & AI Mars Mission Simulator*, Buenos Aires local event)
 
 ---
 

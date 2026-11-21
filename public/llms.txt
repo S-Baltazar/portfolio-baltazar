@@ -24,23 +24,23 @@ Baltazar Salerno designs and builds fast, accessible, and scalable web applicati
 
 ## Awards & Recognition
 
-- **3rd Place in Argentina — IonQ & Qollab Quantum Hackathon** (QWind: Quantum Optimization for Wind Farms)
-- **Local Winner — NASA Space Apps Challenge 2026** (Tango Horizon: 3D & AI Mars Mission Simulator)
+- **1st Place (Impact Category) & 3rd Place in Argentina — IonQ & Qollab Quantum Hackathon** (QWind: Quantum Optimization for Wind Farms)
+- **1st Place Local Winner (Impact Category) — NASA Space Apps Challenge 2026** (Tango Horizon: 3D & AI Mars Mission Simulator)
 
 ## Featured Projects
 
 ### 1. QWind: Quantum Optimization for Wind Farms (Quantum Computing · 2026)
-- **Award:** 3rd Place in Argentina — IonQ & Qollab Hackathon
+- **Award:** 1st Place (Impact Category) & 3rd Place in Argentina — IonQ & Qollab Hackathon
 - **Description:** When a wind turbine spins, it slows down the air behind it and causes the next turbine to generate less electricity. QWind uses quantum computing to decide which turbines should stay on and which should turn off when a wind farm has to reduce output—avoiding wasted clean energy.
-- **Key Highlights:** 3rd Place Winner in Argentina at the IonQ & Qollab Quantum Hackathon; executed on real quantum hardware (IonQ Forte 1, 36 qubits) reaching 93% of ideal success probability on valid samples; tested with real wind data from wind farms in Scotland, England, and Argentina (Chubut and Bahia Blanca); engineered to output 100% valid turbine plans.
+- **Key Highlights:** 1st Place Winner in the Impact Category and 3rd Place Overall in Argentina at the IonQ & Qollab Quantum Hackathon; executed on real quantum hardware (IonQ Forte 1, 36 qubits) reaching 93% of ideal success probability on valid samples; tested with real wind data from wind farms in Scotland, England, and Argentina (Chubut and Bahia Blanca); engineered to output 100% valid turbine plans.
 - **Technologies:** Python, Qiskit, Quantum Computing, NumPy, SciPy.
 - **Repository:** https://github.com/agustindiazcano/qwind-qaoa-windfarm
 - **Video Demo:** https://youtu.be/UGVkgYGXkF4
 
 ### 2. Tango Horizon: 3D & AI Mars Mission Simulator (AI & 3D Simulation · 2026)
-- **Award:** Local Winner — NASA Space Apps Challenge 2026
+- **Award:** 1st Place Local Winner (Impact Category) — NASA Space Apps Challenge 2026
 - **Description:** On Mars, a radio signal takes 4 to 24 minutes to travel from Earth, so astronauts cannot wait for real-time help in an emergency. Built on real NASA maps of Gale Crater, Tango Horizon pairs a 3D simulator with a voice AI assistant and autonomous robots to protect crew health, anticipate dust storms, and coordinate rescues.
-- **Key Highlights:** Local Winner at NASA Space Apps Challenge 2026 (Buenos Aires, supported by NASA, CONAE, Universidad de Palermo, and IBM Argentina); real-time 3D Martian terrain built over authentic NASA MRO HiRISE maps of Gale Crater; voice AI assistant supporting 5 languages over radio and smartphone QR remote control; autonomous rovers and coaxial drones for sample collection, biomedical monitoring, and emergency rescue.
+- **Key Highlights:** 1st Place Local Winner in the Impact Category at NASA Space Apps Challenge 2026 (Buenos Aires, supported by NASA, CONAE, Universidad de Palermo, and IBM Argentina); real-time 3D Martian terrain built over authentic NASA MRO HiRISE maps of Gale Crater; voice AI assistant supporting 5 languages over radio and smartphone QR remote control; autonomous rovers and coaxial drones for sample collection, biomedical monitoring, and emergency rescue.
 - **Technologies:** TypeScript, Three.js, Node.js, Python, Artificial Intelligence, WebSocket.
 - **Repository:** https://github.com/agustindiazcano/nasa-mars-tango-horizon
 - **Live Demo:** https://tangohorizon.vercel.app
