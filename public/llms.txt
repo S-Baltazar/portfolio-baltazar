@@ -38,6 +38,12 @@ Baltazar Salerno diseña y construye aplicaciones web rápidas, accesibles y esc
 - **Repositorio:** https://github.com/agustindiazcano/nasa-mars-tango-horizon
 - **Demo en vivo:** https://tangohorizon.vercel.app
 
+### 3. Argentina Postcards: Cartas y Postales Vintage (Full Stack · 2026)
+- **Descripción:** Aplicación web para escribir, sellar y enviar cartas y postales de estilo antiguo entre amigos. Permite redactar mensajes sobre papel envejecido, elegir entre 100 estampillas argentinas reales organizadas por época y ver animaciones paso a paso al cerrar el sobre con lacre rojo y al abrirlo.
+- **Puntos clave:** Catálogo de 100 estampillas postales argentinas reales filtrables por época; animaciones interactivas de escritura, doblado del sobre, sellado con lacre rojo y apertura; sistema de amigos con códigos postales únicos (`POSTAL-XXXXXX`); backend en Node.js y Express con autenticación JWT y persistencia en Upstash Redis.
+- **Tecnologías:** React, Node.js, Express, Tailwind CSS, Upstash Redis, JWT.
+- **Repositorio:** https://github.com/S-Baltazar/argentina-postcards
+
 ## Enlaces del Sitio
 
 - [Inicio](/)

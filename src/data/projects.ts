@@ -62,4 +62,29 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://tangohorizon.vercel.app",
     repoUrl: "https://github.com/agustindiazcano/nasa-mars-tango-horizon",
   },
+  {
+    id: "argentina-postcards",
+    title: "Argentina Postcards: Cartas y Postales Vintage",
+    category: "Full Stack",
+    year: "2026",
+    description:
+      "Aplicación web para escribir, sellar y enviar cartas y postales de estilo antiguo entre amigos. Permite redactar mensajes sobre papel envejecido, elegir entre 100 estampillas argentinas reales organizadas por época y ver animaciones paso a paso al cerrar el sobre con lacre rojo y al abrirlo.",
+    highlights: [
+      "Catálogo de 100 estampillas postales argentinas reales filtrables por época (desde antes de 1959 hasta 2010 en adelante)",
+      "Animaciones interactivas de escritura, doblado del sobre, sellado con lacre rojo y apertura para quien recibe la carta",
+      "Sistema de amigos con códigos postales únicos (POSTAL-XXXXXX), bandeja de entrada y cartas enviadas",
+      "Backend en Node.js y Express con autenticación JWT y persistencia en Upstash Redis",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "Tailwind CSS",
+      "Upstash Redis",
+      "JWT",
+    ],
+    accentClass: "from-amber-500/20 via-rose-500/10 to-transparent",
+    demoUrl: "https://github.com/S-Baltazar/argentina-postcards",
+    repoUrl: "https://github.com/S-Baltazar/argentina-postcards",
+  },
 ];
