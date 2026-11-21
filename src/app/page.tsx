@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ContactForm } from "@/components/ContactForm";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import aiUsage from "@/data/ai-usage.json";
@@ -136,41 +137,56 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="py-24 sm:py-32">
+        <section className="py-20 sm:py-28">
           <div className="mx-auto max-w-6xl px-6">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3.5 py-1 text-xs font-medium text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                Disponible para nuevos proyectos
+            <div className="flex flex-col-reverse items-start gap-10 md:flex-row md:items-center md:justify-between">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-3.5 py-1 text-xs font-medium text-zinc-700 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300">
+                  <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                  Disponible para nuevos proyectos
+                </div>
+
+                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-6xl">
+                  Baltazar Salerno
+                </h1>
+
+                <p className="mt-3 text-xl font-medium text-blue-600 dark:text-blue-400 sm:text-2xl">
+                  Frontend Developer · Full Stack Developer · Software Engineer
+                </p>
+
+                <p className="mt-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg">
+                  Diseño y construyo aplicaciones web rápidas, accesibles y escalables con
+                  JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.
+                  Enfocado en código limpio y experiencias de usuario claras.
+                </p>
+
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="#proyectos"
+                    className="rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                  >
+                    Ver proyectos
+                  </a>
+                  <a
+                    href="#contacto"
+                    className="rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
+                  >
+                    Contactarme
+                  </a>
+                </div>
               </div>
 
-              <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-6xl">
-                Baltazar Salerno
-              </h1>
-
-              <p className="mt-3 text-xl font-medium text-blue-600 dark:text-blue-400 sm:text-2xl">
-                Frontend Developer · Full Stack Developer · Software Engineer
-              </p>
-
-              <p className="mt-6 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg">
-                Diseño y construyo aplicaciones web rápidas, accesibles y escalables con
-                JavaScript, Python, React, Node.js, MongoDB, PostgreSQL e Inteligencia Artificial.
-                Enfocado en código limpio y experiencias de usuario claras.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <a
-                  href="#proyectos"
-                  className="rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
-                >
-                  Ver proyectos
-                </a>
-                <a
-                  href="#contacto"
-                  className="rounded-lg border border-zinc-300 bg-white px-5 py-2.5 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-200 dark:hover:bg-zinc-800"
-                >
-                  Contactarme
-                </a>
+              <div className="relative shrink-0">
+                <div className="h-40 w-40 overflow-hidden rounded-3xl border-2 border-zinc-200 bg-white shadow-xl dark:border-zinc-800 dark:bg-zinc-900 sm:h-52 sm:w-52">
+                  <Image
+                    src="/profile.png"
+                    alt="Foto de perfil de Baltazar Salerno"
+                    width={208}
+                    height={208}
+                    priority
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
