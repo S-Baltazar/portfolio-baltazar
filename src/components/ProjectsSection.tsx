@@ -19,17 +19,17 @@ export function ProjectsSection() {
       : PROJECTS.filter((project) => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 sm:py-24 border-t border-zinc-200 dark:border-zinc-800">
+    <section id="projects" className="relative py-24 sm:py-28 border-t border-white/10">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-sm font-medium uppercase tracking-widest text-blue-600 dark:text-blue-400">
-              Portfolio
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-sky-400">
+              01 // Selected Work
             </p>
-            <h2 className="mt-2 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-4xl">
+            <h2 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Featured Projects
             </h2>
-            <p className="mt-3 max-w-2xl text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-3 max-w-2xl text-base text-zinc-400">
               Real-world projects I have worked on, explained clearly from the problem they solve to the technology behind them.
             </p>
           </div>
@@ -45,10 +45,10 @@ export function ProjectsSection() {
                     role="tab"
                     aria-selected={isActive}
                     onClick={() => setActiveCategory(category)}
-                    className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors cursor-pointer ${
+                    className={`rounded-full px-4 py-1.5 text-xs font-medium transition-all cursor-pointer ${
                       isActive
-                        ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900"
-                        : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                        ? "bg-white text-zinc-950 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+                        : "border border-white/10 bg-white/[0.04] text-zinc-300 hover:border-white/25 hover:bg-white/[0.08]"
                     }`}
                   >
                     {category}
@@ -59,35 +59,35 @@ export function ProjectsSection() {
           )}
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {filteredProjects.map((project, index) => (
             <article
               key={project.id}
-              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-zinc-200 bg-white transition-all duration-200 hover:-translate-y-1 hover:border-zinc-300 hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700"
+              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md transition-all duration-300 hover:-translate-y-1.5 hover:border-sky-400/40 hover:bg-white/[0.05] hover:shadow-[0_20px_50px_-15px_rgba(56,189,248,0.2)]"
             >
               <div>
                 <div
-                  className={`relative h-44 w-full overflow-hidden bg-gradient-to-br ${project.accentClass} border-b border-zinc-200/80 dark:border-zinc-800`}
+                  className={`relative h-48 w-full overflow-hidden bg-gradient-to-br ${project.accentClass} border-b border-white/10`}
                 >
                   <Image
                     src={project.imageUrl}
                     alt={project.imageAlt}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#06080f] via-[#06080f]/25 to-black/35" />
                   <div className="relative z-10 flex h-full flex-col justify-between p-4">
                     <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-zinc-900 backdrop-blur-sm dark:bg-zinc-950/80 dark:text-zinc-100">
+                      <span className="inline-flex items-center rounded-full border border-white/15 bg-black/60 px-3 py-1 text-[11px] font-medium text-zinc-100 backdrop-blur-md">
                         {project.category}
                       </span>
-                      <span className="rounded-full bg-black/50 px-2.5 py-0.5 font-mono text-xs text-white backdrop-blur-sm">
+                      <span className="rounded-full border border-white/10 bg-black/60 px-2.5 py-0.5 font-mono text-[11px] text-zinc-300 backdrop-blur-md">
                         0{index + 1} · {project.year}
                       </span>
                     </div>
                     {project.award && (
-                      <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-amber-400/95 px-3 py-1 text-xs font-semibold text-zinc-950 shadow-sm">
+                      <div className="inline-flex w-fit items-center gap-1.5 rounded-full border border-amber-300/40 bg-amber-400/95 px-3 py-1 text-[11px] font-semibold text-zinc-950 shadow-lg">
                         <span aria-hidden="true">🏆</span>
                         <span>{project.award}</span>
                       </div>
@@ -96,32 +96,32 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-50">
+                  <h3 className="text-xl font-semibold tracking-tight text-white group-hover:text-sky-300 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <p className="mt-2.5 text-sm leading-relaxed text-zinc-400">
                     {project.description}
                   </p>
                 </div>
               </div>
 
               <div className="px-6 pb-6">
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1.5">
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-md bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                      className="rounded-md border border-white/10 bg-white/[0.04] px-2.5 py-1 text-[11px] font-medium text-zinc-300"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-5 flex items-center justify-between border-t border-zinc-100 pt-4 dark:border-zinc-800">
+                <div className="mt-5 flex items-center justify-between border-t border-white/10 pt-4">
                   <button
                     type="button"
                     onClick={() => setSelectedProject(project)}
-                    className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 cursor-pointer"
+                    className="text-sm font-medium text-sky-400 transition-colors hover:text-sky-300 cursor-pointer"
                   >
                     View details →
                   </button>
@@ -130,7 +130,7 @@ export function ProjectsSection() {
                       href={project.repoUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-md border border-zinc-200 px-2.5 py-1 text-zinc-700 transition-colors hover:bg-zinc-100 hover:text-zinc-900 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-100"
+                      className="rounded-lg border border-white/15 bg-white/[0.04] px-2.5 py-1 text-zinc-200 transition-colors hover:border-white/30 hover:bg-white/10"
                     >
                       GitHub ↗
                     </a>
@@ -139,7 +139,7 @@ export function ProjectsSection() {
                         href={project.demoUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="rounded-md bg-zinc-900 px-2.5 py-1 text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200"
+                        className="rounded-lg bg-white px-2.5 py-1 text-zinc-950 transition-colors hover:bg-sky-200"
                       >
                         Demo ↗
                       </a>
@@ -154,50 +154,56 @@ export function ProjectsSection() {
 
       {selectedProject && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-md"
           role="dialog"
           aria-modal="true"
           aria-labelledby="project-modal-title"
           onClick={() => setSelectedProject(null)}
         >
           <div
-            className="w-full max-w-lg rounded-2xl border border-zinc-200 bg-white p-6 shadow-2xl dark:border-zinc-800 dark:bg-zinc-900 sm:p-8"
+            className="w-full max-w-lg rounded-2xl border border-white/15 bg-[#0b101d] p-6 shadow-2xl sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <span className="text-xs font-medium uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                <span className="font-mono text-xs font-medium uppercase tracking-wider text-sky-400">
                   {selectedProject.category} · {selectedProject.year}
                 </span>
                 <h3
                   id="project-modal-title"
-                  className="mt-1 text-2xl font-bold text-zinc-900 dark:text-zinc-50"
+                  className="mt-1 text-2xl font-bold text-white"
                 >
                   {selectedProject.title}
                 </h3>
+                {selectedProject.award && (
+                  <div className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-amber-400/30 bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-300">
+                    <span aria-hidden="true">🏆</span>
+                    <span>{selectedProject.award}</span>
+                  </div>
+                )}
               </div>
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close modal"
-                className="rounded-lg p-1.5 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 cursor-pointer"
+                className="rounded-lg p-1.5 text-zinc-400 hover:bg-white/10 hover:text-white cursor-pointer"
               >
                 ✕
               </button>
             </div>
 
-            <p className="mt-4 text-sm leading-relaxed text-zinc-600 dark:text-zinc-300">
+            <p className="mt-4 text-sm leading-relaxed text-zinc-300">
               {selectedProject.description}
             </p>
 
             <div className="mt-6">
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+              <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-zinc-400">
                 Key Highlights
               </h4>
-              <ul className="mt-2.5 space-y-2 text-sm text-zinc-700 dark:text-zinc-300">
+              <ul className="mt-2.5 space-y-2 text-sm text-zinc-300">
                 {selectedProject.highlights.map((item) => (
                   <li key={item} className="flex items-start gap-2">
-                    <span className="mt-1 text-blue-600 dark:text-blue-400">•</span>
+                    <span className="mt-1 text-sky-400">•</span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -205,14 +211,14 @@ export function ProjectsSection() {
             </div>
 
             <div className="mt-6">
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400">
+              <h4 className="font-mono text-xs font-semibold uppercase tracking-wider text-zinc-400">
                 Technologies
               </h4>
               <div className="mt-2.5 flex flex-wrap gap-2">
                 {selectedProject.technologies.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-md bg-zinc-100 px-2.5 py-1 text-xs font-medium text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300"
+                    className="rounded-md border border-white/10 bg-white/[0.05] px-2.5 py-1 text-xs font-medium text-zinc-200"
                   >
                     {tech}
                   </span>
@@ -220,13 +226,13 @@ export function ProjectsSection() {
               </div>
             </div>
 
-            <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-zinc-100 pt-5 dark:border-zinc-800">
+            <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-5">
               <div className="flex flex-wrap items-center gap-2.5">
                 <a
                   href={selectedProject.repoUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg border border-zinc-300 px-3.5 py-2 text-sm font-medium text-zinc-800 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+                  className="rounded-lg border border-white/15 bg-white/[0.04] px-3.5 py-2 text-sm font-medium text-zinc-200 transition-colors hover:bg-white/10"
                 >
                   GitHub Repository ↗
                 </a>
@@ -235,7 +241,7 @@ export function ProjectsSection() {
                     href={selectedProject.demoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="rounded-lg bg-blue-600 px-3.5 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
+                    className="rounded-lg bg-sky-500 px-3.5 py-2 text-sm font-semibold text-zinc-950 transition-colors hover:bg-sky-400"
                   >
                     Live / Video Demo ↗
                   </a>
@@ -245,7 +251,7 @@ export function ProjectsSection() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 cursor-pointer"
+                className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-zinc-950 hover:bg-zinc-200 cursor-pointer"
               >
                 Close
               </button>

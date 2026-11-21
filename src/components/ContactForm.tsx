@@ -20,23 +20,23 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900/60 sm:p-8"
+      className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-md shadow-2xl sm:p-8"
     >
       {submitted ? (
         <div className="py-8 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-400">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full border border-emerald-400/30 bg-emerald-500/15 text-emerald-400">
             ✓
           </div>
-          <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+          <h3 className="mt-4 text-lg font-semibold text-white">
             Message sent!
           </h3>
-          <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+          <p className="mt-2 text-sm text-zinc-400">
             Thanks for reaching out. This is a demo form; I will get back to you shortly.
           </p>
           <button
             type="button"
             onClick={() => setSubmitted(false)}
-            className="mt-6 rounded-lg border border-zinc-300 px-4 py-2 text-sm font-medium text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800 cursor-pointer"
+            className="mt-6 rounded-lg border border-white/15 bg-white/[0.05] px-4 py-2 text-sm font-medium text-zinc-200 hover:bg-white/10 cursor-pointer"
           >
             Send another message
           </button>
@@ -46,7 +46,7 @@ export function ContactForm() {
           <div>
             <label
               htmlFor="contact-name"
-              className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              className="block text-sm font-medium text-zinc-300"
             >
               Name
             </label>
@@ -57,14 +57,14 @@ export function ContactForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
-              className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
+              className="mt-1.5 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-sky-400 focus:outline-none"
             />
           </div>
 
           <div>
             <label
               htmlFor="contact-email"
-              className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              className="block text-sm font-medium text-zinc-300"
             >
               Email
             </label>
@@ -75,14 +75,14 @@ export function ContactForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="you@email.com"
-              className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
+              className="mt-1.5 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-sky-400 focus:outline-none"
             />
           </div>
 
           <div>
             <label
               htmlFor="contact-message"
-              className="block text-sm font-medium text-zinc-700 dark:text-zinc-300"
+              className="block text-sm font-medium text-zinc-300"
             >
               Message
             </label>
@@ -93,13 +93,13 @@ export function ContactForm() {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Tell me about your project or inquiry..."
-              className="mt-1.5 w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 placeholder-zinc-400 focus:border-blue-500 focus:outline-none dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-100 dark:placeholder-zinc-500"
+              className="mt-1.5 w-full rounded-xl border border-white/10 bg-black/40 px-3.5 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-sky-400 focus:outline-none"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full rounded-lg bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-200 cursor-pointer"
+            className="w-full rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-zinc-950 transition-all hover:bg-sky-200 cursor-pointer"
           >
             Send message
           </button>
