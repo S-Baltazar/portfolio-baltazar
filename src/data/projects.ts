@@ -98,4 +98,32 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://postales-vintage.vercel.app/",
     repoUrl: "https://github.com/S-Baltazar/argentina-postcards",
   },
+  {
+    id: "trains-station-3d",
+    title: "3D Railway Station & Trivia Simulator",
+    category: "Full Stack",
+    year: "2026",
+    description:
+      "An interactive 3D railway station and trivia game built with React Three Fiber and Express. Players answer curated and procedurally generated trivia questions as trains pull into the station, earning coins to expand the terminal with shops, a second parallel platform, a covered pedestrian bridge, an electrical substation, animated city buses, and four custom 3D train formations.",
+    highlights: [
+      "Detailed procedural 3D models and textures in Three.js for four train types, brick archways, glass canopies, shops, turnstiles, and Argentine city buses",
+      "Anti-repetition trivia engine combining curated questions, procedural math/geography generators, difficulty tiers, 60-second blitz mode, and achievements",
+      "Progressive dual-station expansion featuring a second track, 18-step pedestrian overpass, modular substation, dynamic day/sunset/night cycle, and 3D rain",
+      "Responsive desktop and mobile portrait/landscape UI with arrow-key free camera, Web Audio SFX, and serverless Express API deployed on Vercel",
+    ],
+    technologies: [
+      "React",
+      "Three.js",
+      "React Three Fiber",
+      "Node.js",
+      "Express",
+      "Zustand",
+      "Vercel",
+    ],
+    imageUrl: "/projects/trains-station.jpg",
+    imageAlt: "3D Railway Station and Trivia Simulator architectural preview",
+    accentClass: "from-sky-500/20 via-cyan-500/10 to-transparent",
+    demoUrl: "https://trains-proyect.vercel.app",
+    repoUrl: "https://github.com/S-Baltazar/trains-project",
+  },
 ];
